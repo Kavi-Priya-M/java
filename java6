@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] argh) {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        
+        // Loop through each distinct query
+        for (int i = 0; i < t; i++) {
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            
+            int currentSum = a;
+            // Generate the n space-separated elements of the series
+            for (int j = 0; j < n; j++) {
+                currentSum += (int)(Math.pow(2, j) * b);
+                System.out.print(currentSum + " ");
+            }
+            // Move down to a new line for the next query output group
+            System.out.println();
+        }
+        in.close();
+    }
+}
