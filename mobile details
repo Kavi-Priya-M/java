@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Mobile{
+    String brand;
+    int price;
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        Mobile s=new Mobile();
+        System.out.print("enter brand :");
+        s.brand=sc.nextLine();
+        System.out.print("enter price :");
+        s.price=sc.nextInt();
+        System.out.println("\n mobile details");
+        System.out.println("brand "+s.brand);
+        System.out.println("price: "+s.price);
+        sc.close();
+    }
+}
