@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Book{
+    String title;
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        Book s=new Book();
+        System.out.print("enter title :");
+        s.title=sc.nextLine();
+        System.out.println("title "+s.title);
+        sc.close();
+    }
+}
