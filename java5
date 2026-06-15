@@ -1,0 +1,18 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        // Reads the input integer N from standard input
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+        bufferedReader.close();
+
+        // Loop to generate the multiplication table
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(N + " x " + i + " = " + (N * i));
+        }
+    }
+}
